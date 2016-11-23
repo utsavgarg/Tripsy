@@ -1,0 +1,28 @@
+<ion-view view-title="Add Hotel" name="login-view">
+  <ion-content class="padding tripsy-bg">
+      <ion-list class="list-inset">
+          <div class="item item-body">
+          </div>
+          
+            <label class="item item-input">
+              <div class="input-label">
+                Location
+              </div>
+              <input type="text" ng-model="query" style="color:#000">
+            </label>
+         
+            <h2 style="color:#fff" class="text-center">Hotels Available</h2>
+        <div class="hotel" ng-repeat="(hotelIndex,hotel) in home| filter: query">
+        <ion-list>
+          <ion-item class="item-text-wrap item-thumbnail-left" ng-click="toggleStar(item)" ng-repeat="item in hotel.hotels "
+              href="#">
+          
+          <img ng-src="img/{{item.shortname}}.jpg" alt="{{item.name}} Photo">
+          <h2 class="title">{{item.name}}</h2>
+          <p class="title">{{ item.des }}</p>
+      </ion-item>
+      </ion-list>
+      </div>
+      <button class="button button-block button-calm" ng-click="submit()">Submit</button>
+  </ion-content>
+</ion-view>

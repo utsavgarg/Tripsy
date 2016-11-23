@@ -1,0 +1,32 @@
+<ion-view view-title="Login" name="login-view" >
+  <ion-content class="padding tripsy-bg">
+      <div class="list list-inset tripsy-bg">
+          <label>
+            <img class="center" ng-src="img/Tripsy.png"/>
+          </label>
+          <!-- <label class="item item-input">
+              <input type="text" placeholder="Username" ng-model="data.username">
+          </label> -->
+          <label class="item item-input item-floating-label no-border">
+          <span class="input-label white-color">Email</span>
+          <input type="text" placeholder="Email" ng-model="user.email" id="emailUser">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label white-color">Password</span>
+          <input type="password" placeholder="Password" ng-model="user.password" id="passwordUser">
+        </label>
+        
+      </div>
+      <button class="button button-block button-positive" ng-click="login()">Login</button>
+      <center>
+      <button class="button button-clear button-stable" ng-click="forgotPassword()">
+      Forgot Password?
+    </button>
+    <p class="white-color" ng-show="isInValid == true">Email and Password Do Not Match!</p>
+  </center>
+
+  </ion-content>
+  <div class="bar bar-footer">
+  <button class="button button-positive pull-right" ng-click="adminLogin()">ADMIN</button>
+</div>
+</ion-view>

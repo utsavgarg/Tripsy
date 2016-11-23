@@ -1,0 +1,131 @@
+{
+    "employee": [
+        {
+            "EmpName": "Pratyum Jagan",
+            "EmpCode": 1,
+            "EmpEmail": "pratyum@tripsy.com",
+            "class": "Platinum",
+            "color": "dark",
+            "schedule": [
+                {
+                    "tripSrt": "Singapore",
+                    "tripEnd": "India",
+                    "date": "30-8-2015",
+                    "days": "5"
+                },
+                {
+                    "tripSrt": "Singapore",
+                    "tripEnd": "Bali",
+                    "date": "12-9-2015",
+                    "days": "3"
+                }
+            ]
+        },
+        {
+            "EmpName": "Utsav Garg",
+            "EmpCode": 2,
+            "EmpEmail": "utsav@tripsy.com",
+            "class": "Gold",
+            "color": "energized",
+            "schedule": [
+                {
+                    "tripSrt": "Singapore",
+                    "tripEnd": "Waterloo",
+                    "date": "5-9-2015",
+                    "days": "30"
+                }
+            ]
+        },
+        {
+            "EmpName": "Shantanu Kamath",
+            "EmpCode": 3,
+            "EmpEmail": "shantanu@tripsy.com",
+            "class": "Platinum",
+            "color": "dark",
+            "schedule": [
+                {
+                    "tripSrt": "Singapore",
+                    "tripEnd": "Los Angeleas",
+                    "date": "9-9-2015",
+                    "days": "15"
+                }
+            ]
+        },
+        {
+            "EmpName": "Priyanshu Singh",
+            "EmpCode": 4,
+            "EmpEmail": "priyansh@tripsy.com",
+            "class": "Silver",
+            "color": "stable"
+        },
+        {
+            "EmpName": "Rahul Nambiar",
+            "EmpCode": 5,
+            "EmpEmail": "rahul@tripsy.com",
+            "class": "Silver",
+            "color": "stable",
+            "schedule": [
+                {
+                    "tripSrt": "London",
+                    "tripEnd": "Singapore",
+                    "date": "15-9-2015",
+                    "days": "5"
+                }
+            ]
+        }
+    ],
+    "hotel": [
+        {
+            "country": "Singapore",
+            "hotels": [
+              {"name" : "Fragrance Hotel-Waterfront",
+                "shortname": "hotel_waterfront",
+                "des": "Fragrance Hotel-Waterfront is located in the south-western part of Singapore, a short 15-minute drive from VivoCity – Singapore’s largest mall. It offers affordable accommodation. Air-conditioned rooms are fitted with a tea/coffee maker and a flat-screen TV with cable channels. Each room has a private bathroom with hot shower facilities. Waterfront Fragrance offers laundry services. Guided sightseeing tours can be arranged upon request, at a charge. Fragrance Hotel – Waterfront is a 30-minute drive from Changi International Airport. It is a 5-minute drive from Dover MRT Station."
+            } ,
+            {"name" : "Singapore Marriott Tang Plaza Hotel",
+                "shortname": "hotel_marriott",
+                "des": "Embark on a luxury escape at the iconic Singapore Marriott Tang Plaza Hotel. Strategically located in the heart of Orchard Road and just above Orchard Road MRT Station, guests may delight in the array of impeccable hotel amenities - from state-of-the-art furnishings in every room and suite, to the luxury Retreat spa. The gastronomic indulgences are aplenty "
+            }
+            ]
+        },
+        {
+            "country": "India",
+            "hotels": [
+              {"name" : "Trident Hotel",
+                "shortname": "hotel_trident",
+                "des": "Nestled in the heart of vibrant and bustling Mumbai lies Trident, Nariman Point. Soaring 35 storeys tall, it offers panoramic views of the Marine Drive or the Queen's necklace, as the beautiful promenade is lovingly called. An iconic Mumbai landmark, featuring one of the finest accommodations in the city, this is the address to be seen at."
+            } ,
+            {"name" : "The Leela Palace",
+                "shortname": "leela_palace",
+                "des": "Where Adyar River joins the Bay of Bengal stands the The Leela Palace Chennai. Set on 4.8 acres of land, it is the first and only seafront five-star hotel in Chennai and is designed by John Gerondelis from Smallwood, Reynolds, Stewart, Stewart & Associates Inc. the hotel’s public areas, guestrooms and suites, Library Blu, Jamavar and Spectra are designed by Jeffrey A. Wilkes, the principal designer of DESIGNWILKES. Indisputably, The Leela Palace Chennai is the envy of Chennai five star hotels . To add it all, is the touch of Mrs.Madhu Nair, Director Operations and Design, The Leela Palaces, Hotels and Resorts, which brings to life the art and embellishments seen around the hotel. Drawn from the inspiration of Chettinad Dynasty, the architecture of the hotel exudes regal opulence. The 11-storeyed hotel, which is situated close to the central business district and local attractions, features 326 rooms and suites and is equipped with world-class amenities, with luxurious meeting and conference centres."
+            }
+            ]
+        },
+        {
+            "country": "New York",
+            "hotels": [
+              {"name" : "The Savoy Hotel",
+                "shortname": "hotel_savoy",
+                "des": "This legendary hotel is positioned on the banks of the Thames, in the heart of the theater district and an easy walk to the designer shops of Knightsbridge and Mayfair."
+            } ,
+            {"name" : "Hotel 41",
+                "shortname": "hotel_41",
+                "des": "This five-star intimate private hideaway in the heart of London comprises 30 luxurious rooms and suites, exceptional levels of comfort, personal butler, 24 hour room service and staff who outnumber guests two to one.The epitome of luxurious style, the chic black and white design of 41 is enriched by rich mahogany and exquisite furnishings. Guests can enjoy round-the-clock dining and complimentary treats in the residents only Executive Lounge."
+            }
+            ]
+        },
+        {
+            "country": "Waterloo",
+            "hotels": [
+              {"name" : "The Waterloo Hotel",
+                "shortname": "hotel_waterloo",
+                "des": "The Waterloo Hotel is a boutique hotel housed in an 1890 heritage building that was completely restored in 1997. The hotel sits in the heart of Uptown Waterloo, which is referred to as the vibrant core area of the City of Waterloo. Guests are just steps away from boutique shopping, unique restaurants, and a variety of spa services. The hotel is also in close proximity to the University of Waterloo, Wilfrid Laurier University, Conestoga College, various corporate head offices, St. Jacobs and the famous St. Jacob’s farmers’ market."
+            } ,
+            {"name" : "Waterloo Inn Conference Hotel",
+                "shortname": "waterloo_inn",
+                "des": "While it might come as a surprise that one of the largest convention hotels in Waterloo, Ontario is also its warmest and most personable, the Waterloo Inn Conference Hotel takes great pride in surprising our guests every day – with contemporary, continually updated accommodations, an award-winning restaurant and impressive meeting rooms for events of any size.  Even our setting - overlooking 19 leafy acres next to a conservation creek - comes as an unexpected delight."
+            }
+            ]
+        }
+    ]
+}

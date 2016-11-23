@@ -1,0 +1,70 @@
+<ion-view view-title="Dashboard">
+  <ion-content id="dash">
+    <ion-list>
+    	<div class="card" id="Weather">
+    	<div class="title padding">
+    	<h4 id="city"></h4>
+    	</div>
+  		<div class="item item-text-wrap">
+    		<div class="row">
+				  <div class="col col-50">
+				  <p id="minTemp"></p><br>
+				  <p id="maxTemp"></p><br>
+				  <p id="sky"></p><br>
+				  </div>
+				  <div class="col col-50 text-center">
+			      <img id="icon" src="http://openweathermap.org/img/w/10d.png">
+				  <p ><h1 id="curTemp"></h1></p>
+				  </div>
+			</div>
+  		</div>
+	</div>
+	<div class="card" id="Trip">
+    	<div class="title padding">
+    	<h4 id="flight">British Airways BA02</h4>
+    	</div>
+  		<div class="item item-text-wrap">
+    		<div class="row">
+    			<p style="color:green">Scheduled &nbsp</p><p> Departs in 2 Days</p>
+			</div>
+			<div class="row">
+    			<div class="col col-30 text-center"><h1>LON</h1></div>
+    			<div class="col col-40 text-center"><img src="img/logo.png"></div>
+    			<div class="col col-30 text-center"><h1>JFK</h1></div>
+			</div>
+			<div class="row">
+    			<p>Web Reference: ABC12D</p>
+			</div>
+  		</div>
+	</div>
+
+ <div class="card card-header" ng-show="myservice.cardVisible == true">
+      <div class="title padding">
+      <h4>New York harbour To Darrien lake</h4>
+      </div>
+      <div class="item item-text-wrap">
+        <div class="row">
+          <div class="col col-50">
+          <p>Est. Distance : 10 Km</p>
+          <p>ETA : 20 mins</p>
+          <p>Est. Fare : $20</p>
+          </div>
+          <div class="col col-50 text-center">
+            <span class="item item-thumbnail item-thumbnail-right item-clear">
+              <img src="img/taxi.png"/>
+            </span>
+          </div>
+        </div>          
+        </div>
+      </div>
+
+    </ion-list>
+  </ion-content>
+  <div class="bar bar-footer padding"  id="dashFoot">
+    <div class="button-bar">
+  <a class="padding button button-clear button-positive" ng-click="onFlight()"><i class="icon ion-plus-circled icon-left"></i>&nbsp&nbspFlight</a>
+  <a class="padding button button-clear button-positive" ng-click="onHotel()"><i class="icon ion-plus-circled icon-left"></i>&nbsp&nbspHotel</a>
+  <a class="padding button button-clear button-positive " ng-click="onCab()"><i class="icon ion-plus-circled icon-left"></i>&nbsp&nbspTaxi</a>
+</div>
+</div>	
+</ion-view>

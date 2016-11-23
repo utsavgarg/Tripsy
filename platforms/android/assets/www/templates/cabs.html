@@ -1,0 +1,41 @@
+<ion-view view-title="Book a cab">
+
+<ion-nav-buttons side="secondary">
+  <button class="button button-icon ion-android-car"></button>
+</ion-nav-buttons>
+<ion-content class="tripsy-bg">
+
+<div class="list padding">
+  <!-- <label class="item item-input item-stacked-label">
+    <span class="input-label">Pickup Location</span>
+    <input type="text" placeholder="jurong-west">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Drop off location</span>
+    <input type="text" placeholder="kallang">
+  </label> -->
+  <label class="item item-input item-floating-label no-top-border">
+          <span class="input-label white-color">Pickup Location</span>
+          <input type="text" placeholder="Pickup Location" ng-model="user.email">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label white-color">Drop off Location</span>
+          <input type="text" placeholder="Drop off Location" ng-model="user.password">
+        </label>
+  <label class=" item item-input item-positive item-select">
+    <span class="input-label">Cab Type</span>
+    <select>
+      <option>Exec</option>
+      <option>Regular</option>
+      <option>Excel</option>
+      <option>Limo</option>
+
+    </select>
+  </label>
+  <p></p>
+  <img ng-src="img/maps_2.jpg">
+  <button id="cab" class=" button button-positive button-block" ng-click="onBook()">Book</button>
+</div>
+
+</ion-content>
+</ion-view>

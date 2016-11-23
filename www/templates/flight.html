@@ -1,0 +1,54 @@
+<ion-view view-title="Flight Booking">
+<ion-header-bar align-title="left" class="bar-positive has-tabs-top"> 
+</ion-header-bar>
+<ion-content id="flights" class="padding">
+<div class="list row">
+<div class="col col-50">
+  <label class="item item-radio">
+    <input type="radio" name="group" ng-click="noIn()">
+    <div class="item-content">
+      One-Way
+    </div>
+    <i class="radio-icon ion-ios-circle-filled"></i>
+  </label>
+</div>
+<div class="col col-50">
+  <label class="item item-radio">
+    <input type="radio" name="group" ng-click="In()">
+    <div class="item-content">
+      Return
+    </div>
+    <i class="radio-icon ion-ios-circle-filled"></i>
+  </label>
+</div>
+</div>
+  <div id="flightMain">
+  	<button class="button button-full button-positive" id="origin" ng-click="originModal()">
+  		Origin
+	</button>
+	<button class="button button-full button-positive" id="destination" ng-click="destinationModal()">
+  		Destination
+	</button>
+  	</div>
+  	<div class="row">
+  		<div class="col col-50 text-center">
+  			<ionic-datepicker input-obj="datepickerObject">
+  			<button class="button button-block button-positive" id="outDate">Departure On {{datepickerObject.inputDate | date:'dd - MMMM - yyyy'}}</button>
+			</ionic-datepicker>
+  		</div>
+  		<div class="col col-50 text-center">
+  			<ionic-datepicker input-obj="DatepickerObject">
+  			<button class="button button-block button-positive" id="inDate">Return On {{DatepickerObject.inputDate | date:'dd - MMMM - yyyy'}}</button>
+			</ionic-datepicker>
+  		</div>
+  	</div>
+  </div>
+</ion-content>
+<ion-footer-bar align-title="center" class="footer-positive">
+  <h1 class="title"><button class="button button-clear button-light" ng-click="onSubmit()">
+  Submit
+</button></h1>
+</ion-footer-bar>
+</ion-view>	
+
+

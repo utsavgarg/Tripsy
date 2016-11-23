@@ -1,0 +1,31 @@
+<ion-view view-title="Welcome Admin!" id="adminMain" >
+  <div class="bar bar-subheader bar-positive item-custom item-input-inset bar-stable">
+      <label class="item-input-wrapper">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" ng-model="query" placeholder="Search by employee">
+      </label>
+  </div>
+<ion-content ng-controller="ListController" class= "padding has-subheader" >
+      <ion-refresher on-refresh="Refresh()"></ion-refresher>
+      <ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
+        <ion-item ng-repeat="item in Emp|filter : query" class="item-avatar-left item-text-wrap item-avatar-right"> 
+        <img ng-src="http://placehold.it/100x100" alt="{{item.Emp}} Photo">
+        <h2 class="title">{{item.EmpName}}</h2>
+        <h3 class="title">{{item.EmpCode}}</h3>
+        <span class="badge badge-{{item.color}}">{{item.class}}</span>
+        <!-- <ion-option-button class="button-dark" ng-click="starToggle(item)"><i class="icon ion-star"></i></ion-option-button>
+            <ion-delete-button class="ion-minus-circled" ng-click="onItemDelete(item)"></ion-delete-buton> 
+            <ion-reorder-button class="ion-navicon" on-reorder="moveItems(item,$fromIndex,$toIndex)"></ion-reorder-button>
+         --></ion-item>
+      </ion-list>
+
+</ion-content>
+
+<div class="bar bar-footer">
+<div class="button-bar">
+  <a class="button button-clear button-positive pull-left" ng-click="loyal()"><i class="icon ion-card icon-positive"></i></a>
+  <a class="button button-clear button-positive" ng-click="adminLogout()"><i class="icon ion-power icon-positive"></i></a>
+  <a class="button button-clear button-positive pull-right" ng-click="openModal()"><i class="icon ion-plus-circled icon-positive"></i></a>
+</div>
+
+</ion-view>

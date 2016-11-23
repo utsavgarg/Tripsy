@@ -1,0 +1,120 @@
+/* Empty. Add your own CSS if you like */
+ion-list{
+	background-color: #1D1D1D !important;
+}
+#adminMain{
+	background-color: #1d1d1d;
+}
+
+#remain{
+	margin :0 auto;
+	max-height: 225px;
+	min-height: 225px;
+	max-width: 225px;
+	min-width: 225px;
+}
+
+#used{
+	max-width: 150px;
+	max-height: 150px;
+}
+
+#save{
+
+	max-height: 150px;
+	max-width: 150px;
+
+}
+
+.item.item-calm{
+	border-color: #11c1f3;
+}
+
+.item.item-custom{
+	background-color: #1d1d1d;
+	border-color: #1d1d1d;
+	color: #fff;
+}
+
+#drawer{
+	background-color: #1d1d1d;
+}
+
+#dash{
+	background-color: #1d1d1d;
+}
+
+#dashTitle{
+	background-color: #1d1d1d;
+}
+
+#Weather{
+	background-color: #d3d3d3;
+}
+
+#Trip{
+	background-color: #d3d3d3;
+}
+
+#dashFoot{
+	background-color: #1d1d1d;
+}
+/* Empty. Add your own CSS if you like */
+.center{
+	margin: 0 auto;
+    width: 75%;
+    max-width: 200%;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    padding-left: 140px;
+}
+/*ion-content {
+	background-color: #43cee6;
+}
+.item.item-input {
+    background-color: #765;
+}*/
+
+.tripsy-bg{
+	background-color: #1d1d1d;
+	border-color: #1d1d1d;
+}
+
+.no-top-border{
+	border-top:0px;
+}
+.item.item-input.item-floating-label{
+	border-left: 0px;
+	border-right: 0px;
+	border-color: #1d1d1d;
+}
+
+.item.item-input.item-floating-label textarea, input[type="text"], input[type="password"]{
+	color:#FFF;
+	border-color:#1d1d1d;
+}
+
+.white-color{
+	color:#FFF;
+}
+
+.bar.bar-footer{
+	background-color: #1d1d1d;
+}
+img.center{
+	padding-top:0px;
+	padding-bottom: 0px;
+	padding-left: 80px;
+	padding-right: 0px;
+}
+
+#flights{
+	background-color: #1d1d1d;
+}
+
+#cab{
+	margin-top:0px  !important;
+}
+
+

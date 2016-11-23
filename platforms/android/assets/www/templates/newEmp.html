@@ -1,0 +1,37 @@
+<ion-view view-title="Add New Employee" name="login-view">
+  <ion-content class="padding tripsy-bg">
+      <div class="list list-inset">
+          <label class="item item-input item-floating-label no-top-border">
+          <span class="input-label">Employee Name</span>
+          <input type="text" placeholder="Name" ng-model="EmpName" style="color:#000;">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Employee Code</span>
+          <input type="text" placeholder="Code" ng-model="Empcode"style="color:#000">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Employee Email</span>
+          <input type="text" placeholder="Email" ng-model="Empemail"style="color:#000">
+        </label>
+        <div class="item item-divider">
+        </div>
+        <span class ="input-label">Class</span>
+        <label class="item item-radio">
+            <input type="radio" name="Empclass" ng-model ="EmpClassS">
+            <div class="item-content">Silver</div>
+            <i class="radio-icon ion-checkmark-circled"></i>
+        </label>
+        <label class="item item-radio">
+            <input type="radio" name="Empclass" ng-model ="EmpClassG">
+            <div class="item-content">Gold</div>
+            <i class="radio-icon ion-checkmark-circled"></i>
+        </label>
+        <label class="item item-radio">
+            <input type="radio" name="Empclass" ng-model ="EmpClassP">
+            <div class="item-content">Platinum</div>
+            <i class="radio-icon ion-checkmark-circled"></i>
+        </label>
+
+      <button class="button button-block button-calm" ng-click="submit()">Submit</button>
+  </ion-content>
+</ion-view>

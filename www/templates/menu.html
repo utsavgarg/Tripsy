@@ -1,0 +1,68 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">    
+    <ion-content id="drawer">
+      <div class="list">
+      <a class="item item-avatar item-avatar-left item-positive " href="#">
+        <img src="img/sample.png">
+        <h2 style="color:#fff">Utsav Garg</h2>
+        <p style="color:#fff">utsavgarg@xyz.com</p>
+        <span class="badge badge-calm">Platinum</span>
+      </a>
+      <a class="item item-custom item-icon-left" href="#" ng-click="onDash()">
+      <i class="icon ion-monitor"></i>
+        Dashboard
+      </a>
+      <a class="item item-custom item-icon-left" href="#">
+      <i class="icon ion-clipboard"></i>
+        History
+      </a>
+      <a class="item item-custom item-icon-left" href="#" ng-click="onFlight()">
+      <i class="icon ion-plane"></i>
+        Flight
+      </a>
+      <a class="item item-custom item-icon-left" href="#" ng-click="onHotel()">
+      <i class="icon ion-ios-home"></i>
+        Hotel
+      </a>
+      <a class="item item-custom item-icon-left" href="#" ng-click="onCab()">
+      <i class="icon ion-model-s"></i>
+        Cab
+      </a>
+      <div class="item item-divider item-positive">
+      </div>
+      <a class="item item-custom item-icon-left" href="#" ng-click="onSee()">
+      <i class="icon ion-ios-flower"></i>
+        Places to See
+      </a>
+      <a class="item item-custom item-icon-left" href="#" ng-click="onEat()">
+      <i class="icon ion-fork"></i>
+        Places to Eat
+      </a>
+      <a class="item item-custom item-icon-left" href="#" ng-click="onDo()">
+      <i class="icon ion-briefcase"></i>
+        Things to Do 
+      </a>
+      <a class="item item-custom item-icon-left" href="#">
+      <i class="icon ion-ios-gear"></i>
+        Settings
+      </a>
+      <a class="item item-custom item-icon-left" href="#" ng-click="logout()">
+      <i class="icon ion-power"></i>
+        Log Out
+      </a>
+      </div>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

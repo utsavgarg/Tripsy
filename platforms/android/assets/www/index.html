@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic-datepicker/dist/ionic-datepicker.bundle.min.js"></script>
+    
+    <script src="js/app.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+  </head>
+  <body ng-app="starter">
+      <ion-nav-bar class="bar-positive">
+        <ion-nav-back-button></ion-nav-back-button>
+      </ion-nav-bar>
+      <ion-nav-view></ion-nav-view>
+  </body>
+  
+  <script id="contact-modal.html" type="text/ng-template">
+  <div class="modal">
+    <ion-header-bar>
+      <h1 class="title">Add Employee</h1>
+    </ion-header-bar>
+    <ion-content class ="tripsy-bg">
+      <div class="list list-inset">
+        <label class="item item-input item-floating-label no-top-border">
+          <span class="input-label white-color">Employee Name</span>
+          <input type="text" placeholder="Name" id = "Emp.name" ng-model="Emp.name">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label white-color">Employee Code</span>
+          <input type="text" placeholder="Code" id = "Emp.code" ng-model="Emp.code">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label white-color">Employee Email</span>
+          <input type="text" placeholder="Email" id = "Emp.email" ng-model="Emp.email">
+        </label>
+        <span class ="input-label white-color"><b>&nbsp;&nbsp;&nbsp;Class</b></span>
+        <label class="item item-radio tripsy-bg">
+            <input type="radio" name="Empclass" id = "Emp.classS" ng-model ="Emp.classS">
+            <div class="item-content">Silver</div>
+            <i class="radio-icon ion-checkmark-circled "></i>
+        </label>
+        <label class="item item-radio tripsy-bg">
+            <input type="radio" name="Empclass" id = "Emp.classG" ng-model ="Emp.classG">
+            <div class="item-content">Gold</div>
+            <i class="radio-icon ion-checkmark-circled item-calm"></i>
+        </label>
+        <label class="item item-radio tripsy-bg">
+            <input type="radio" name="Empclass" id = "Emp.classP" ng-model ="Emp.ClassP">
+            <div class="item-content">Platinum</div>
+            <i class="radio-icon ion-checkmark-circled item-calm"></i>
+        </label>
+      </div>
+<button class="button button-full button-calm" ng-click="closeModal()">Done</button>
+
+    </ion-content>
+  </div>
+  console.log($("#Emp.name").val());
+  $("#Emp_name").html($("#Emp.name").val());
+</script>
+
+  <script id="my-modal.html" type="text/ng-template">
+  <ion-modal-view ng-controller="HomeTabCtrl">
+    <ion-header-bar class="bar-dark">
+      <h1 class="title">City</h1>
+    </ion-header-bar>
+    <ion-content>
+    <div class="bar bar-header item-input-inset">
+  <label class="item-input-wrapper">
+    <i class="icon ion-ios-search placeholder-icon"></i>
+    <input type="search" id="search" placeholder="Search" ng-model="data" ng-change="filterCountries()">
+  </label>
+</div>
+<ion-scroll direction="y" ng-show="data.length > 0">
+ <ul class="list">
+                  <li class="item" ng-repeat="c in filteredArray">
+                         {{c.name}}
+                  </li>
+              </ul>
+  </ion-scroll>
+    </ion-content>
+   <ion-footer-bar align-title="center" class="bar-dark">
+  <h1 class="title" ng-click="closeOriginModal()"><button class="button button-clear button-light">
+  Done
+</button></h1>
+</ion-footer-bar>
+  </ion-modal-view>
+  </script> 
+  
+
+
+</html>
